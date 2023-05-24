@@ -1,0 +1,35 @@
+{% extends "frappe/templates/web.html" %}
+{% block content %}
+<div class="head-sec">
+	<h1 class="heading">Real State Transformers</h1>
+		  <form>
+		    <label for="item" class="glyphicon glyphicon-search"></label><!--
+		      --><input type="text" placeholder="Search" id="item">
+		    <button id="btn-checkin">Check-in</button>
+		  </form>
+</div>
+
+<!-- for page content -->
+<div id='page-content'>
+	<h2 class="heading2">Our Projects</h2>
+	<div class="row">
+	{% for item in items['data'] %}
+		<div class="card col-md-3 col-lg-3 col-sm-6 col-3 col-xs-12">
+		  <img class="item-img card-img-top" src='{{item.image}}' alt="Card image">
+		  <div class="card-body col-md-12 col-lg-12 col-sm-12 col-12 col-xs-12">
+		    <h4 class="card-title">{{item.item_name}}</h4>
+		    <p class="card-text">{{item.valuation_rate}} Pkr</p>
+		    <a id='check-out' href="#" class="btn btn-primary">Check Out</a>
+		  </div>
+		</div>
+
+		<!-- <div class="item-details col-md-3 col-lg-3 col-sm-6 col-3">
+			<img class = "item-img" src='{{item.image}}'>
+			<br>{{item.name}} - {{item.item_name}}
+			<br>
+			{{item.valuation_rate}} PKR
+		</div> -->
+	{% endfor %}
+</div>
+</div>
+{% endblock %}

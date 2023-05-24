@@ -1,0 +1,74 @@
+input#item{
+  width: 30%;
+  margin-top: 90px;
+  padding: 15px 10px 10px 15px;
+  position: relative; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+}
+
+
+button#btn-checkin {
+  display: block;
+  margin-top: 5px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00FF00;
+  color: #999999;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.head-sec {
+  background-image: url("/files/main.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 400px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.page-custom_page {
+  width: 100% !important;
+}
+
+.heading {
+  padding: 50px;
+  color: Gray;
+  text-align: center;
+  vertical-align: center;
+  font-family: Optima;
+}
+
+.heading2 {
+  padding: 30px 100px 30px 100px;
+  color: Gray;
+  background-color: orange;
+  text-align: center;
+  vertical-align: center;
+  font-family: Optima;
+}
+
+#page-content {
+  margin-top: 20px;
+}
+
+/*.item-details {
+  margin-bottom: 100px;
+  margin-top: 40px;
+  height: 260px;
+  display: inline-block;
+}*/
+.item-img {
+  height: 260px;
+}
+.card-body{
+  font-family: Optima;
+}
